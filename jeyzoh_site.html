@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEYZOH — Artiste Musicien</title>
+  <meta name="description" content="Site officiel de JEYZOH, artiste musicien. Découvrez sa musique, ses services et ses produits.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#111;color:#eee;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(17,17,17,.94);border-bottom:1px solid #333}
+    nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.7rem;font-weight:900;letter-spacing:4px}
+    nav ul{display:flex;gap:22px;list-style:none}
+    nav a{color:#ccc;font-weight:600}
+    nav a:hover{color:#fff}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:110px 20px 60px;background:radial-gradient(circle at center,#444 0,#222 38%,#111 75%)}
+    .hero h1{font-size:clamp(3.5rem,12vw,8rem);letter-spacing:10px;margin-bottom:10px}
+    .hero p{font-size:1.2rem;color:#bbb;margin-bottom:30px}
+    .btn{display:inline-block;padding:13px 25px;border:1px solid #aaa;border-radius:30px;background:#ddd;color:#111;font-weight:800;transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:#fff}
+    section{max-width:1100px;margin:auto;padding:90px 20px}
+    .title{text-align:center;margin-bottom:45px}
+    .title h2{font-size:2.4rem;margin-bottom:8px}
+    .title p{color:#999}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .box{background:#1d1d1d;border:1px solid #333;border-radius:18px;padding:30px}
+    .services,.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#1b1b1b;border:1px solid #333;border-radius:16px;padding:25px}
+    .card h3{margin-bottom:10px}
+    .card p{color:#aaa;margin-bottom:18px}
+    .price{font-size:1.2rem;font-weight:800;margin-bottom:18px}
+
+    .clip-card{max-width:900px;margin:auto;background:#1b1b1b;border:1px solid #333;border-radius:18px;padding:20px}
+    .clip-video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;display:block;background:#000}
+    .clip-info{padding:20px 4px 4px;text-align:center}
+    .clip-info h3{font-size:1.5rem;margin-bottom:8px}
+    .clip-info p{color:#999;margin-bottom:18px}
+    .contact{text-align:center;background:#1d1d1d;border:1px solid #333;border-radius:20px;padding:45px 20px}
+    .phone{font-size:1.7rem;font-weight:800;margin:18px 0 25px}
+    footer{text-align:center;padding:30px 20px;border-top:1px solid #333;color:#888}
+    @media(max-width:800px){
+      nav ul{gap:10px;font-size:.85rem}
+      .about,.services,.products{grid-template-columns:1fr}
+      .logo{font-size:1.3rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#accueil">JEYZOH</a>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clips">Clips</a></li>
+      <li><a href="#produits">Produits</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <div>
+      <p>ARTISTE • CHANTEUR • MUSICIEN</p>
+      <h1>JEYZOH</h1>
+      <p>La musique, mon univers. Le partage, ma passion.</p>
+      <a class="btn" href="#produits">Découvrir mes produits</a>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="title">
+      <h2>À propos de JEYZOH</h2>
+      <p>Découvrez l'artiste derrière la musique.</p>
+    </div>
+    <div class="about">
+      <div class="box">
+        <h3>Mon univers</h3>
+        <p>JEYZOH est un chanteur masculin passionné par la musique et la scène. À travers ses morceaux et ses prestations, il partage son énergie, son style et son univers avec son public.</p>
+      </div>
+      <div class="box">
+        <h3>Mon objectif</h3>
+        <p>Créer des expériences musicales mémorables, collaborer avec d'autres artistes et faire découvrir toujours plus de nouvelles créations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="title">
+      <h2>Mes services</h2>
+      <p>JEYZOH vous accompagne pour vos projets et événements.</p>
+    </div>
+    <div class="services">
+      <div class="card"><h3>🎤 Concerts</h3><p>Prestations musicales pour concerts et événements.</p></div>
+      <div class="card"><h3>🎉 Événements</h3><p>Animations musicales pour anniversaires, soirées et événements privés.</p></div>
+      <div class="card"><h3>🤝 Collaborations</h3><p>Featuring et projets musicaux avec d'autres artistes.</p></div>
+    </div>
+  </section>
+
+
+  <section id="clips">
+    <div class="title">
+      <h2>🎬 Mes clips</h2>
+      <p>Découvrez les clips officiels de JEYZOH.</p>
+    </div>
+
+    <div class="clip-card">
+      <video class="clip-video" controls preload="metadata">
+        <source src="VID_20260920_134640.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture vidéo.
+      </video>
+
+      <div class="clip-info">
+        <h3>JEYZOH — Rehefa tsisy plan regny</h3>
+        <p>Découvrez le clip officiel de JEYZOH.</p>
+        <a class="btn"
+           href="https://www.youtube.com/"
+           target="_blank"
+           rel="noopener">
+          ▶ Hijery ao amin’ny YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="produits">
+    <div class="title">
+      <h2>Nos produits</h2>
+      <p>Découvrez l'univers officiel de JEYZOH.</p>
+    </div>
+    <div class="products">
+      <div class="card"><h3>🎵 Single JEYZOH</h3><p>Une création musicale originale de JEYZOH, disponible en téléchargement numérique.</p><div class="price">5 000 Ar</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20commander%20le%20Single%20JEYZOH." target="_blank">Commander</a></div>
+      <div class="card"><h3>💿 Album JEYZOH</h3><p>L'album de JEYZOH réunissant plusieurs titres de son univers musical.</p><div class="price">20 000 Ar</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20commander%20l%27Album%20JEYZOH." target="_blank">Commander</a></div>
+      <div class="card"><h3>👕 T-Shirt JEYZOH</h3><p>T-shirt officiel JEYZOH avec un design inspiré de l'univers de l'artiste.</p><div class="price">35 000 Ar</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20commander%20un%20T-Shirt%20JEYZOH." target="_blank">Commander</a></div>
+      <div class="card"><h3>🧢 Casquette JEYZOH</h3><p>Casquette officielle JEYZOH pour afficher le style de l'artiste au quotidien.</p><div class="price">25 000 Ar</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20commander%20une%20Casquette%20JEYZOH." target="_blank">Commander</a></div>
+      <div class="card"><h3>🎤 Prestation musicale</h3><p>JEYZOH pour vos concerts, anniversaires, soirées privées et autres occasions.</p><div class="price">Sur demande</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20une%20prestation%20musicale." target="_blank">Commander</a></div>
+      <div class="card"><h3>🤝 Collaboration artistique</h3><p>Featuring, morceau ou projet musical réalisé avec JEYZOH.</p><div class="price">Sur demande</div><a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20souhaite%20une%20collaboration%20artistique." target="_blank">Commander</a></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="title"><h2>Contact</h2><p>Pour une commande, une prestation ou une collaboration.</p></div>
+      <div class="phone">📞 033 57 865 37</div>
+      <a class="btn" href="https://wa.me/261335786537?text=Bonjour%20JEYZOH%2C%20je%20vous%20contacte%20depuis%20votre%20site%20web." target="_blank">Contacter JEYZOH sur WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 JEYZOH — Tous droits réservés.</footer>
+
+</body>
+</html>
